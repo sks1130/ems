@@ -16,11 +16,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @EnableAutoConfiguration
 public class EmployeeManagement {
-
+	
 	@RequestMapping("/")
     String welcome() {
         return "Welcome to the Employee Management System!!!";
     }
+	
 	public static void main(String[] args) {
 		 SpringApplication.run(EmployeeManagement.class, args);
 

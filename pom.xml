@@ -32,14 +32,11 @@
  
     <build>
         <plugins>
-            <!-- this maven plugin is used to execute the jar -->
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>exec-maven-plugin</artifactId>
-            <configuration>
-                <mainClass>ems.EmployeeManagement</mainClass>
-            </configuration>
-        </plugin>
+          <!-- Package as an executable jar/war -->
+		<plugin>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId>
+		</plugin>
         <plugin>
 		    <groupId>org.apache.maven.plugins</groupId>
 		    <artifactId>maven-compiler-plugin</artifactId>
